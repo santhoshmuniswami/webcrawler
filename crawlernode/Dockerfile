@@ -2,7 +2,7 @@ FROM node:stretch
 
 WORKDIR /home
 
-COPY ../webcrawler/ ./
+COPY webcrawler/ ./
 
 RUN npm install
 
