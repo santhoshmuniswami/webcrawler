@@ -25,12 +25,6 @@ RUN pip install -r requirement.txt
 
 RUN npm install
 
-RUN chmod +x server.py
-
-RUN chmod +x startscript.sh
-
-nohup python server.py > serveroutput.log &
-
 EXPOSE 5000 9000
 
-CMD [ "npm", "start" ]
+CMD python server.py
