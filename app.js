@@ -91,6 +91,7 @@ app.post('/sitemap',function(req,res){
       properties = [];
 
       options = {
+        host:'0.0.0.0',
         port: 5000,
         path: '/sitemap',
         method: 'POST',
