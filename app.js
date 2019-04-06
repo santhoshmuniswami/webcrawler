@@ -163,7 +163,7 @@ app.get('/*', function(req, res) {
   res.end();
 });
 
-app.listen(port, host);
+app.listen(9000, '0.0.0.0');
 console.log('App started on port ' + port);
 
 module.exports = app;
