@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>Crawler by Santhosh</title>
+    <script>
+      function validateUrl() {
+        var url = document.forms["myForm"]["fname"].value;
+        var reurl = /^(http[s]?:\/\/){0,1}(www\.){0,1}[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,5}[\.]{0,1}/;
+        return reurl.test(url);
+
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <h2>Try to Crawl here!</h2>
+
+    <form action="/sitemap" onsubmit="return validateUrl()" method="post">
+      URL:<br>
+      <input type="text" name="url">
+      <br>
+      <br>
+      <input type="submit" value="Submit" >
+    </form>
+
+    <p>Enter URL here and submit to crawl it!</p>
+
+  </body>
+</html>
