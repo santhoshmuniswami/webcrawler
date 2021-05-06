@@ -1,7 +1,7 @@
 beautifulsoup4==4.7.1
 certifi==2019.3.9
 Flask==1.0.2
-Flask-Cors==3.0.7
+Flask-Cors==3.0.9
 get==2019.3.22
 Jinja2==2.10
 jsonify==0.5
