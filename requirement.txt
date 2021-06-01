@@ -13,6 +13,6 @@ query-string==2019.3.22
 requests==2.21.0
 setuptools==40.6.2
 urljoin==1.0.0
-urllib3==1.24.1
+urllib3==1.26.5
 virtualenv==16.4.3
 Werkzeug==0.15.1
